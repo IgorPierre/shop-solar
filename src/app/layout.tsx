@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/Header";
 
-const roboto = Roboto({
+const poppins = Poppins({
   weight: '400',
   subsets: ['latin'],
 })
@@ -18,9 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={roboto.className}>
-        {children}
+    <html lang="pt-BR" className="bg-white text-gray">
+      <body className={poppins.className}>
+        <Header />
+        <main className="h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
