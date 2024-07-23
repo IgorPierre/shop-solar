@@ -1,11 +1,16 @@
 type ButtonProps = {
-    text: string
+    text: string;
+    isBordered: boolean | null;
 }
 
-export default function Button({ text } : ButtonProps) {
-    return(
-        <button className="bg-orange text-white rounded px-4 py-1 hover:bg-light-orange duration-500">
+export default function Button({ text, isBordered }: ButtonProps) {
+    const baseStyles = "rounded px-4 py-1 duration-500";
+    const borderedStyles = "border-2 border-white text-white hover:bg-light-orange mt-6";
+    const filledStyles = "bg-orange text-white hover:bg-light-orange";
+
+    return (
+        <button className={`${baseStyles} ${isBordered ? borderedStyles : filledStyles}`}>
             {text}
         </button>
-    )
+    );
 }
