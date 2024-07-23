@@ -5,9 +5,10 @@ import Button from "./Button";
 type ProductDetailsProps = {
     product: ProductType;
     onClose: () => void;
+    onAddToCart: () => void;
 }
 
-export default function ProductDetails({ product, onClose }: ProductDetailsProps) {
+export default function ProductDetails({ product, onClose, onAddToCart }: ProductDetailsProps) {
     const addToCart = () => {
         const storedCart = localStorage.getItem('cart');
         const cartItems = storedCart ? JSON.parse(storedCart) : [];
@@ -17,6 +18,7 @@ export default function ProductDetails({ product, onClose }: ProductDetailsProps
 
     const handleButtonClick = () => {
         addToCart();
+        onAddToCart();
         onClose();
     };
 
@@ -30,7 +32,7 @@ export default function ProductDetails({ product, onClose }: ProductDetailsProps
             </div>
             <img src={product.image} alt={product.name} className="w-auto h-96 shadow-xl object-contain mb-6 rounded" />
             <p className="text-base w-2/3">{product.description}</p>
-            <div className="flex items-center justify-between gap-12 mt-8">
+            <div className="flex items-center justify-between w-2/3 mt-8">
                 <p className="text-orange font-semibold text-xl">R$ {product.price?.toFixed(2).replace('.', ',')}</p>
                 <Button text="Comprar" onClick={handleButtonClick} />
             </div>

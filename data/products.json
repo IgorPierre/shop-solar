@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "Elétricos",
+    "category": "Módulos",
     "name": "Painel Solar JA Solar 550W Bifacial",
     "price": 472.32,
     "image": "/images/products/painel_solar.webp",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "category": "Estrutura",
+    "category": "Estruturas",
     "name": "Estrutura Romagnole 4 placas Pratic Lite Telha Ondulada",
     "price": 191.33,
     "image": "/images/products/estrutura.jpg",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "category": "Cabos",
+    "category": "Elétricos",
     "name": "Cabo solar Cobrecon 4MM",
     "price": 5.83,
     "image": "/images/products/cabo.webp",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "category": "Conectores",
+    "category": "Elétricos",
     "name": "Conector MC-4 (Par)",
     "price": 7.29,
     "image": "/images/products/conector.webp",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "category": "Fusíveis",
+    "category": "Elétricos",
     "name": "PV Fuse 20A 1000VDC",
     "price": 17.00,
     "image": "/images/products/fusivel.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "category": "String Box",
+    "category": "Elétricos",
     "name": "String Box Clamper 2E/1S",
     "price": 518.17,
     "image": "/images/products/string_box.webp",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "category": "Transformadores",
+    "category": "Elétricos",
     "name": "Auto Transformador POLUX 10 kVA IP23",
     "price": 3147.15,
     "image": "/images/products/autotrasformador.webp",

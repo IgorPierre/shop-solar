@@ -11,12 +11,19 @@ type ProductProps = {
 
 export default function Product({ product }: ProductProps) {
     const [showDetails, setShowDetails] = useState(false);
+    const [showNotification, setShowNotification] = useState(false);
 
     const addToCart = () => {
         const storedCart = localStorage.getItem('cart');
         const cartItems = storedCart ? JSON.parse(storedCart) : [];
         cartItems.push(product);
         localStorage.setItem('cart', JSON.stringify(cartItems));
+    };
+
+    const handleAddToCart = () => {
+        addToCart();
+        setShowNotification(true);
+        setTimeout(() => setShowNotification(false), 3000);
     };
 
     return (
@@ -34,15 +41,24 @@ export default function Product({ product }: ProductProps) {
             <p className="font-semibold">{product.name}</p>
             <div className="flex items-center justify-between gap-4 w-full">
                 <p className="text-orange font-semibold">R$ {product.price?.toFixed(2).replace('.', ',')}</p>
-                <Button text="Comprar" onClick={addToCart} />
+                <Button text="Comprar" onClick={handleAddToCart} />
             </div>
             {showDetails && (
                 <>
                     <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setShowDetails(false)}></div>
                     <div className="fixed top-0 right-0 w-full sm:w-3/4 md:w-2/5 h-full bg-white shadow-lg p-4 overflow-y-auto flex flex-col z-50 transform transition-transform duration-300 translate-x-0">
-                        <ProductDetails product={product} onClose={() => setShowDetails(false)} />
+                        <ProductDetails 
+                            product={product} 
+                            onClose={() => setShowDetails(false)} 
+                            onAddToCart={handleAddToCart}
+                        />
                     </div>
                 </>
+            )}
+            {showNotification && (
+                <div className="fixed bottom-4 right-4 bg-green-400 text-white p-4 rounded-md shadow-lg z-30">
+                    Produto adicionado ao carrinho!
+                </div>
             )}
         </div>
     );
