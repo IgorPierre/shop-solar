@@ -20,7 +20,7 @@ export default function Product({ product }: ProductProps) {
     };
 
     return (
-        <div className="flex flex-col gap-2 shadow-xl p-6 bg-white rounded-md">
+        <div className="flex flex-col gap-2 shadow-xl p-6 bg-[#fff] rounded-md">
             <div onClick={() => setShowDetails(true)} className="relative group cursor-pointer">
                 <img
                     src={product.image}
@@ -39,7 +39,7 @@ export default function Product({ product }: ProductProps) {
             {showDetails && (
                 <>
                     <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setShowDetails(false)}></div>
-                    <div className="fixed top-0 right-0 w-2/5 h-full bg-white shadow-lg p-4 overflow-y-auto flex flex-col z-50 transform transition-transform duration-300 translate-x-0">
+                    <div className="fixed top-0 right-0 w-full sm:w-3/4 md:w-2/5 h-full bg-white shadow-lg p-4 overflow-y-auto flex flex-col z-50 transform transition-transform duration-300 translate-x-0">
                         <ProductDetails product={product} onClose={() => setShowDetails(false)} />
                     </div>
                 </>

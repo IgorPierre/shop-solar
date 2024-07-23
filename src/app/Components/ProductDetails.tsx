@@ -15,10 +15,15 @@ export default function ProductDetails({ product, onClose }: ProductDetailsProps
         localStorage.setItem('cart', JSON.stringify(cartItems));
     };
 
+    const handleButtonClick = () => {
+        addToCart();
+        onClose();
+    };
+
     return (
-        <div className="flex flex-col items-start pl-8">
+        <div className="flex flex-col items-start p-0 md:pl-8">
             <div className='flex items-center justify-between mb-16 w-full'>
-                <h1 className="text-xl font-bold">{product.name}</h1>
+                <h1 className="text-sm md:text-xl font-bold">{product.name}</h1>
                 <button onClick={onClose} className="text-right text-red-500 text-2xl">
                     <IoIosCloseCircle />
                 </button>
@@ -27,7 +32,7 @@ export default function ProductDetails({ product, onClose }: ProductDetailsProps
             <p className="text-base w-2/3">{product.description}</p>
             <div className="flex items-center justify-between gap-12 mt-8">
                 <p className="text-orange font-semibold text-xl">R$ {product.price?.toFixed(2).replace('.', ',')}</p>
-                <Button text="Comprar" onClick={addToCart} />
+                <Button text="Comprar" onClick={handleButtonClick} />
             </div>
         </div>
     );
