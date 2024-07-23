@@ -1,4 +1,3 @@
-```markdown
 # Shop Solar
 
 Catálogo fictício para uma loja de equipamentos para o ramo de energia solar.
@@ -20,7 +19,7 @@ Para clonar o repositório, execute o seguinte comando no terminal:
 
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+cd shop-solar
 ```
 
 ## Instalando Dependências
@@ -49,5 +48,4 @@ npm run dev
 
 ```bash
 yarn dev
-```
 ```
