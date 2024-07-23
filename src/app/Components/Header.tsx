@@ -26,7 +26,7 @@ export default function Header() {
         <img className="w-32" src="images/logo.png" alt="Logo" />
       </Link>
       <div className="relative">
-        <button onClick={toggleCart} className="relative text-orange text-2xl">
+        <button onClick={toggleCart} className="relative text-orange text-2xl transition duration-300 hover:text-light-orange">
           <FaShoppingCart size={24} />
           {cartItemCount > 0 && (
             <span className="absolute bottom-3 left-5 bg-cyan-900 text-white text-xs font-bold rounded-full px-1 py-0">
