@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "category": "Painel",
+    "name": "Painel Solar JA Solar 550W Bifacial",
+    "price": 472.32,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Painel Solar JA Solar 550W Bifacial de alta eficiência."
+  },
+  {
+    "id": 2,
+    "category": "Inversores",
+    "name": "Inversor Fronius Primo 3Kw Monof. 220V",
+    "price": 1905.59,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Primo 3Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 3,
+    "category": "Inversores",
+    "name": "Inversor Fronius Primo 4Kw Monof. 220V",
+    "price": 2777.66,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Primo 4Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 4,
+    "category": "Inversores",
+    "name": "Inversor Fronius Primo 5Kw Monof. 220V",
+    "price": 3068.51,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Primo 5Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 5,
+    "category": "Inversores",
+    "name": "Inversor Fronius Primo 6Kw Monof. 220V",
+    "price": 3427.43,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Primo 6Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 6,
+    "category": "Inversores",
+    "name": "Inversor Fronius Primo 8,2Kw Monof. 220V",
+    "price": 4507.21,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Primo 8,2Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 7,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo BR 10Kw Trif. 220V",
+    "price": 17681.02,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo BR 10Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 8,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo BR 12Kw Trif. 220V",
+    "price": 19746.66,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo BR 12Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 9,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo BR 15Kw Trif. 220V",
+    "price": 18496.07,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo BR 15Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 10,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo 12,5Kw Trif. 380V",
+    "price": 10136.19,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo 12,5Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 11,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo 15Kw Trif. 380V",
+    "price": 11274.04,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo 15Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 12,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo 17,5Kw Trif. 380V",
+    "price": 11893.33,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo 17,5Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 13,
+    "category": "Inversores",
+    "name": "Inversor Fronius Symo 20Kw Trif. 380V",
+    "price": 12619.95,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Symo 20Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 14,
+    "category": "Inversores",
+    "name": "Inversor Fronius Eco 25Kw Trif. 380V",
+    "price": 14016.72,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Eco 25Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 15,
+    "category": "Inversores",
+    "name": "Inversor Fronius Eco Light 25Kw Trif. 380V",
+    "price": 13653.38,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Eco Light 25Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 16,
+    "category": "Inversores",
+    "name": "Inversor Fronius Eco 27Kw Trif. 380V",
+    "price": 15375.81,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Eco 27Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 17,
+    "category": "Inversores",
+    "name": "Inversor Fronius Eco Light 27Kw Trif. 380V",
+    "price": 14947.44,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Eco Light 27Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 18,
+    "category": "Inversores",
+    "name": "Inversor Fronius Kit Eco 75Kw (Eco 25 + 2 Eco 25 Light)",
+    "price": 41323.48,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Kit Eco 75Kw para sistemas de energia solar."
+  },
+  {
+    "id": 19,
+    "category": "Inversores",
+    "name": "Inversor Fronius Tauro ECO 50-3-D Trif 380V",
+    "price": 23662.16,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Tauro ECO 50-3-D Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 20,
+    "category": "Inversores",
+    "name": "Inversor Fronius Tauro ECO 100-3-D Trif 380V",
+    "price": 47324.77,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Tauro ECO 100-3-D Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 21,
+    "category": "Inversores",
+    "name": "Inversor Fronius Tauro ECO 100-3-P Trif 380V",
+    "price": 47324.77,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Inversor Fronius Tauro ECO 100-3-P Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 22,
+    "category": "Stringbox",
+    "name": "Stringbox AC 25Kw Monofásico",
+    "price": 572.06,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox AC 25Kw Monofásico para sistemas de energia solar."
+  },
+  {
+    "id": 23,
+    "category": "Stringbox",
+    "name": "Stringbox AC 25Kw Trifásico",
+    "price": 583.53,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox AC 25Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 24,
+    "category": "Stringbox",
+    "name": "Stringbox AC 60Kw Trifásico",
+    "price": 799.87,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox AC 60Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 25,
+    "category": "Stringbox",
+    "name": "Stringbox AC 70Kw Trifásico",
+    "price": 799.87,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox AC 70Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 26,
+    "category": "Stringbox",
+    "name": "Stringbox DC 20A 4 MPPT IP65",
+    "price": 632.21,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox DC 20A 4 MPPT IP65 para sistemas de energia solar."
+  },
+  {
+    "id": 27,
+    "category": "Stringbox",
+    "name": "Stringbox DC 20A 8 MPPT IP65",
+    "price": 858.93,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox DC 20A 8 MPPT IP65 para sistemas de energia solar."
+  },
+  {
+    "id": 28,
+    "category": "Stringbox",
+    "name": "Stringbox DC 30A 4 MPPT IP65",
+    "price": 845.10,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox DC 30A 4 MPPT IP65 para sistemas de energia solar."
+  },
+  {
+    "id": 29,
+    "category": "Stringbox",
+    "name": "Stringbox DC 30A 8 MPPT IP65",
+    "price": 1350.74,
+    "image": "/images/products/painel_solar.webp",
+    "description": "Stringbox DC 30A 8 MPPT IP65 para sistemas de energia solar."
+  }
+]

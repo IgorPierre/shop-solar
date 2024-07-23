@@ -15,6 +15,9 @@ const config: Config = {
         'gray': '#404040',
         'white': '#F7F8FC',
       },
+      backgroundImage: {
+        'pattern': "url('/images/pattern.svg')",
+      }
     },
   },
   plugins: [],
