@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header";
 import { SearchProvider } from "./Context/SearchContext";
-import Footer from "./Components/Footer";
 
 const poppins = Poppins({
   weight: '400',
@@ -28,7 +27,6 @@ export default function RootLayout({
           <main className="h-full">
             {children}
           </main>
-          <Footer />
         </SearchProvider>
       </body>
     </html>
