@@ -25,7 +25,7 @@ export default function Product({ product }: ProductProps) {
                 <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-48 object-contain transform transition duration-300 hover:scale-105"
+                    className="w-full h-52 object-contain transform transition duration-300 hover:scale-105"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-slate-300 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <FaEye className="text-white text-2xl" />

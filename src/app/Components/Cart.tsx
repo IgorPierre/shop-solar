@@ -9,12 +9,15 @@ type CartProps = {
 
 export default function Cart({ closeCart }: CartProps) {
     const [cartItems, setCartItems] = useState<ProductType[]>([]);
+    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
     useEffect(() => {
         const storedCart = localStorage.getItem('cart');
         if (storedCart) {
             setCartItems(JSON.parse(storedCart));
         }
+        setIsOverlayVisible(true);
+        return () => setIsOverlayVisible(false);
     }, []);
 
     const removeItem = (id: number) => {
@@ -32,41 +35,43 @@ export default function Cart({ closeCart }: CartProps) {
     };
 
     return (
-        <aside className="fixed top-0 right-0 w-2/5 h-full bg-white shadow-lg p-4 overflow-y-auto flex flex-col z-50">
-            <div className='flex items-center justify-between mb-16'>
-                <h2 className="text-2xl">Carrinho</h2>
-                <button onClick={closeCart} className="text-right text-red-500 text-2xl">
-                    <IoIosCloseCircle />
-                </button>
-            </div>
-            {cartItems.length === 0 ? (
-                <p>Seu carrinho está vazio</p>
-            ) : (
-                <div>
-                    <div className="flex-grow min-h-[70vh]">
-                        {cartItems.map(item => (
-                            <div key={item.id} className="flex justify-between items-center mb-4">
-                                <img src={item.image} alt={item.name} className="w-20 h-20 object-cover" />
-                                <div>
-                                    <p className="font-semibold">{item.name}</p>
-                                    <p>R$ {item.price?.toFixed(2).replace('.', ',')}</p>
-                                </div>
-                                <button onClick={() => removeItem(item.id)} className="text-red-500">Remover</button>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="mt-4 flex items-center justify-between border-t pt-4">
-                        <p className="text-lg font-semibold">Total: R$ {calculateTotal().toFixed(2).replace('.', ',')}</p>
-                        <button
-                            onClick={handleCheckout}
-                            className="bg-orange text-white px-4 py-2 rounded hover:bg-light-orange"
-                        >
-                            Finalizar Compra
-                        </button>
-                    </div>
+        <>
+            {isOverlayVisible && <div className="fixed inset-0 bg-black bg-opacity-30 z-40"></div>}
+            <aside className="fixed top-0 right-0 w-2/5 h-full bg-white shadow-lg p-4 overflow-y-auto flex flex-col z-50">
+                <div className='flex items-center justify-between mb-16'>
+                    <h2 className="text-2xl">Carrinho</h2>
+                    <button onClick={closeCart} className="text-right text-red-500 text-2xl">
+                        <IoIosCloseCircle />
+                    </button>
                 </div>
-            )}
-
-        </aside>
+                {cartItems.length === 0 ? (
+                    <p>Seu carrinho está vazio</p>
+                ) : (
+                    <div>
+                        <div className="flex-grow min-h-[70vh]">
+                            {cartItems.map(item => (
+                                <div key={item.id} className="flex justify-between items-center mb-4">
+                                    <img src={item.image} alt={item.name} className="w-20 h-20 object-cover" />
+                                    <div>
+                                        <p className="font-semibold">{item.name}</p>
+                                        <p>R$ {item.price?.toFixed(2).replace('.', ',')}</p>
+                                    </div>
+                                    <button onClick={() => removeItem(item.id)} className="text-red-500">Remover</button>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="mt-4 flex items-center justify-between border-t pt-4">
+                            <p className="text-lg font-semibold">Total: R$ {calculateTotal().toFixed(2).replace('.', ',')}</p>
+                            <button
+                                onClick={handleCheckout}
+                                className="bg-orange text-white px-4 py-2 rounded hover:bg-light-orange"
+                            >
+                                Finalizar Compra
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </aside>
+        </>
     );
 }
