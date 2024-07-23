@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { ProductType } from '@/types/productType';
 import { IoIosCloseCircle } from 'react-icons/io';
 import { FaRegTrashAlt } from 'react-icons/fa';
+import { useRouter } from 'next/navigation';
 
 type CartProps = {
     closeCart: () => void;
@@ -11,6 +12,7 @@ type CartProps = {
 export default function Cart({ closeCart }: CartProps) {
     const [cartItems, setCartItems] = useState<ProductType[]>([]);
     const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+    const router = useRouter();
 
     useEffect(() => {
         const storedCart = localStorage.getItem('cart');
@@ -32,7 +34,12 @@ export default function Cart({ closeCart }: CartProps) {
     };
 
     const handleCheckout = () => {
-        alert('Finalizar compra!');
+        router.push("/pages/summary");
+    };
+
+    const handleButtonClick = () => {
+        handleCheckout();
+        closeCart();
     };
 
     return (
@@ -52,7 +59,7 @@ export default function Cart({ closeCart }: CartProps) {
                         <div className="min-h-[50vh] md:min-h-[70vh]">
                             {cartItems.map(item => (
                                 <div key={item.id} className="flex justify-between items-center mb-4">
-                                    <img src={item.image} alt={item.name} className="w-14 sm:w-16 md:w-20 h-14 sm:h-16 md:h-20 object-cover" />
+                                    <img src={item.image} alt={item.name} className="w-14 sm:w-16 md:w-20 h-14 sm:h-16 md:h-20 object-contain" />
                                     <div className="flex-1 ml-2 sm:ml-4">
                                         <p className="font-semibold text-xs sm:text-sm md:text-base">{item.name}</p>
                                         <p className="text-xs sm:text-sm md:text-base">R$ {item.price?.toFixed(2).replace('.', ',')}</p>
@@ -62,9 +69,9 @@ export default function Cart({ closeCart }: CartProps) {
                             ))}
                         </div>
                         <div className="mt-4 flex flex-col md:flex-row gap-4 md:items-center justify-between border-t pt-4">
-                            <p className="text-base sm:text-lg font-semibold">Total: R$ {calculateTotal().toFixed(2).replace('.', ',')}</p>
+                            <p className="text-base sm:text-lg font-semibold">Total: <strong className='text-dark-orange'> R$ {calculateTotal().toFixed(2).replace('.', ',')}</strong></p>
                             <button
-                                onClick={handleCheckout}
+                                onClick={handleButtonClick}
                                 className="bg-orange text-white px-2 sm:px-4 py-1 sm:py-2 rounded hover:bg-light-orange"
                             >
                                 Finalizar Compra

@@ -18,81 +18,81 @@
   {
     "id": 3,
     "category": "Inversores",
-    "name": "Inversor Fronius Primo 4Kw Monof. 220V",
-    "price": 2777.66,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Primo 4Kw Monofásico para sistemas de energia solar."
-  },
-  {
-    "id": 4,
-    "category": "Inversores",
-    "name": "Inversor Fronius Primo 5Kw Monof. 220V",
-    "price": 3068.51,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Primo 5Kw Monofásico para sistemas de energia solar."
-  },
-  {
-    "id": 5,
-    "category": "Inversores",
-    "name": "Inversor Fronius Primo 6Kw Monof. 220V",
-    "price": 3427.43,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Primo 6Kw Monofásico para sistemas de energia solar."
-  },
-  {
-    "id": 6,
-    "category": "Inversores",
-    "name": "Inversor Fronius Primo 8,2Kw Monof. 220V",
-    "price": 4507.21,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Primo 8,2Kw Monofásico para sistemas de energia solar."
-  },
-  {
-    "id": 7,
-    "category": "Inversores",
     "name": "Inversor Fronius Symo BR 10Kw Trif. 220V",
     "price": 17681.02,
     "image": "/images/products/inversor.webp",
     "description": "Inversor Fronius Symo BR 10Kw Trifásico para sistemas de energia solar."
   },
   {
-    "id": 8,
+    "id": 4,
     "category": "Inversores",
-    "name": "Inversor Fronius Symo BR 12Kw Trif. 220V",
-    "price": 19746.66,
+    "name": "Inversor Fronius Eco 25Kw Trif. 380V",
+    "price": 14016.72,
     "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Symo BR 12Kw Trifásico para sistemas de energia solar."
+    "description": "Inversor Fronius Eco 25Kw Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 5,
+    "category": "Inversores",
+    "name": "Inversor Fronius Tauro ECO 100-3-D Trif 380V",
+    "price": 54309.73,
+    "image": "/images/products/inversor.webp",
+    "description": "Inversor Fronius Tauro ECO 100-3-D Trifásico para sistemas de energia solar."
+  },
+  {
+    "id": 6,
+    "category": "Inversores",
+    "name": "Inversor Sunways Trif. 380V STT-100KTL",
+    "price": 40556.16,
+    "image": "/images/products/inversor.webp",
+    "description": "Inversor Sunways Trif. 380V STT-100KTL para sistemas de energia solar."
+  },
+  {
+    "id": 7,
+    "category": "Estrutura",
+    "name": "Estrutura Romagnole 4 placas Pratic Lite Telha Ondulada",
+    "price": 191.33,
+    "image": "/images/products/estrutura.jpg",
+    "description": "Estrutura Romagnole para 4 placas Pratic Lite Telha Ondulada."
+  },
+  {
+    "id": 8,
+    "category": "Cabos",
+    "name": "Cabo solar Cobrecon 4MM",
+    "price": 5.83,
+    "image": "/images/products/cabo.webp",
+    "description": "Cabo solar Cobrecon 4MM de alta eficiência."
   },
   {
     "id": 9,
-    "category": "Inversores",
-    "name": "Inversor Fronius Symo BR 15Kw Trif. 220V",
-    "price": 18496.07,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Symo BR 15Kw Trifásico para sistemas de energia solar."
+    "category": "Conectores",
+    "name": "Conector MC-4 (Par)",
+    "price": 7.29,
+    "image": "/images/products/conector.webp",
+    "description": "Conector MC-4 (Par) para sistemas de energia solar."
   },
   {
     "id": 10,
-    "category": "Inversores",
-    "name": "Inversor Fronius Symo 12,5Kw Trif. 380V",
-    "price": 10136.19,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Symo 12,5Kw Trifásico para sistemas de energia solar."
+    "category": "Fusíveis",
+    "name": "PV Fuse 20A 1000VDC",
+    "price": 17.00,
+    "image": "/images/products/fusivel.jpg",
+    "description": "Fusível PV 20A 1000VDC para sistemas de energia solar."
   },
   {
     "id": 11,
-    "category": "Inversores",
-    "name": "Inversor Fronius Symo 15Kw Trif. 380V",
-    "price": 11274.04,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Symo 15Kw Trifásico para sistemas de energia solar."
+    "category": "String Box",
+    "name": "String Box Clamper 2E/1S",
+    "price": 518.17,
+    "image": "/images/products/string_box.webp",
+    "description": "String Box Clamper 2E/1S para sistemas de energia solar."
   },
   {
     "id": 12,
-    "category": "Inversores",
-    "name": "Inversor Fronius Symo 17,5Kw Trif. 380V",
-    "price": 11893.33,
-    "image": "/images/products/inversor.webp",
-    "description": "Inversor Fronius Symo 17,5Kw Trifásico para sistemas de energia solar."
+    "category": "Transformadores",
+    "name": "Auto Transformador POLUX 10 kVA IP23",
+    "price": 3147.15,
+    "image": "/images/products/autotrasformador.webp",
+    "description": "Auto Transformador POLUX 10 kVA IP23 para sistemas de energia solar."
   }
 ]
