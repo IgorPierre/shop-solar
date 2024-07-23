@@ -5,9 +5,9 @@ export default function FilterBar(){
     const { search, setSearch, category, setCategory } = useSearch();
 
     return(
-        <div className="flex items-center gap-4 w-full mb-8">
+        <div className="flex flex-col items-start md:items-center md:flex-row gap-4 w-full mb-8">
             <div className="relative flex items-center">
-                <FaSearch className="absolute left-3 text-gray-500" />
+                <FaSearch className="absolute left-3 text-orange" />
                 <input 
                     type="text" 
                     value={search} 
@@ -19,7 +19,7 @@ export default function FilterBar(){
             <select
                 value={category}
                 onChange={(ev) => setCategory(ev.target.value)}
-                className="ml-4 p-2 py-1 border border-slate-300 rounded-xl focus:outline-none focus:border-dark-orange"
+                className="ml-0 md:ml-4 p-2 py-1 border border-slate-300 rounded-xl focus:outline-none focus:border-dark-orange"
             >
                 <option value="" disabled>Filtrar por categoria</option>
                 <option value="">Todas</option>

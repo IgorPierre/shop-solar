@@ -1,7 +1,7 @@
 type ButtonProps = {
     text: string;
-    isBordered: boolean | null;
-    onClick?: () => void;  // Adiciona a prop onClick
+    isBordered?: boolean | null;
+    onClick?: () => void;
 };
 
 export default function Button({ text, isBordered, onClick }: ButtonProps) {
